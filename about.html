@@ -2,10 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
     <style>
-        /* Will further add CSS styles here later to make the page fancy */
+        /* Your existing styles */
         body {
             font-family: Arial, sans-serif;
             background-color: #f5f5f5;
@@ -59,25 +58,24 @@
             text-align: center;
         }
 
-        
         .backlink {
             position: fixed;
             top: 20px;
             left: 20px;
-            display: ruby-base-container;
+            display: inline-block;
             padding: 10px;
             background-color: #333;
             color: #fff;
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 50%;
+            transition: background-color 0.3s ease;
         }
-        
+
         .backlink:hover {
             background-color: #555;
         }
     </style>
 </head>
-
 <body>
     <header>
         <h1>About Me</h1>
@@ -86,21 +84,9 @@
     <main>
         <section>
             <h2>Introduction</h2>
-            <ul>
             <p>Hi! My name is Sumit (Su from Sushi, mit from Mitsubishi). I am a business student turned software engineer. I am driven by a desire to contribute to society through Machine Learning and AI. As such, I am passionate about engaging in discussions regarding career transitions into the dynamic field of AI and breaking into the tech industry. 
 
                 I like doing random AI projects, uploading them to GitHub, and sharing my struggles and understandings on LinkedIn. I love learning, and I rejoice in the struggle of learning difficult things. It's through navigating these complex problems that innovation and creativity flourish. </p>
-            </ul>
-        </section>
-        
-        <section>
-            <h2>Skills</h2>
-            <ul>
-                <li>Not updated yet! I will do so later.</li>
-                <li>Skill 2</li>
-                <li>Skill 3</li>
-                <!-- Will add more skills as needed -->
-            </ul>
         </section>
         
         <section>
@@ -123,8 +109,12 @@
                 <!-- Will add more links as needed -->
             </ul>
         </section>
+
     </main>
 
+    <a class="backlink" href="index.html">&#8592;</a>
+    <!-- &#8592; is the HTML entity for the left arrow -->
+    
     <footer>
         &copy; 2023 Sumit Pokharel
     </footer>
