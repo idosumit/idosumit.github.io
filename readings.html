@@ -34,9 +34,30 @@
         .section p {
             color: #666;
         }
+
+        /* Backlink styles */
+        .backlink {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            display: inline-block;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 50%;
+            transition: background-color 0.3s ease;
+        }
+
+        .backlink:hover {
+            background-color: #555;
+        }
     </style>
 </head>
 <body>
+    <a class="backlink" href="index.html">&#8592;</a>
+    <!-- &#8592; is the HTML entity for the left arrow -->
+
     <h1>My Readings</h1>
 
     <div class="section">
@@ -49,41 +70,18 @@
             </div>
         </div>
 
-        <div class="sub-section">
-            <h3>2. Book Title</h3>
-            <div class="sub-sub-section">
-                <p>Book Description</p>
-            </div>
-        </div>
-        <!-- add more as needed -->
+        <!-- ... (other books) ... -->
 
     </div>
 
     <div class="section">
         <h2>Past Readings</h2>
         <p>Here are some of the books I've read in the past:</p>
-        <div class="sub-section">
-            <h3>1. Book Title</h3>
-            <div class="sub-sub-section">
-                <p>Book Description</p>
-            </div>
-        </div>
+        <!-- ... (past readings) ... -->
 
-        <div class="sub-section">
-            <h3>2. Book Title</h3>
-            <div class="sub-sub-section">
-                <p>Book Description</p>
-            </div>
-
-        <div class="sub-section">
-            <h3>3. Book Title</h3>
-            <div class="sub-sub-section">
-                <p>Book Description</p>
-            </div>
     </div>
 
-
- <div class="section">
+    <div class="section">
         <h2>Recommended Readings</h2>
         <p>Here are some of the books I recommend:</p>
         <div class="sub-section">
@@ -93,20 +91,12 @@
             </div>
         </div>
 
-        <div class="sub-section">
-            <h3>2. Book Title</h3>
-            <div class="sub-sub-section">
-                <p>Book Description</p>
-            </div>
-        </div>
-        <!-- add more as needed -->
+        <!-- ... (other recommended books) ... -->
 
-</div>
+    </div>
 
-<footer>
-    &copy; 2023 Sumit Pokharel
-</footer>
-
+    <footer>
+        &copy; 2023 Sumit Pokharel
+    </footer>
 </body>
 </html>
-
