@@ -1,24 +1,67 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>My Readings</title>
     <style>
-        /* Fancy CSS styles */
+        /* Basic Styles */
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+            line-height: 1.6;
         }
 
-        h1 {
-            color: #333;
+        /* Header and Navigation Bar Styling */
+        header {
+            background-color: #006d77;
+            color: white;
             text-align: center;
-            padding: 20px;
-            background-color: #fff;
+            padding: 1rem 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        header nav ul {
+            list-style: none;
+            padding: 0;
             margin: 0;
         }
 
+        header nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+
+        header nav ul li a:hover,
+        header nav ul li a.active {
+            background-color: rgba(255, 223, 186, 0.5);
+            box-shadow: 0 0 10px rgba(255, 223, 186, 0.7);
+        }
+
+        /* Content Styling */
+        .content {
+            padding: 80px 20px;
+            margin-top: 60px;
+        }
+
+        /* Section Box Styling */
         .section {
             margin: 20px;
             padding: 20px;
@@ -35,68 +78,66 @@
             color: #666;
         }
 
-        /* Backlink styles */
-        .backlink {
-            position: fixed;
-            top: 20px;
-            left: 20px;
-            display: inline-block;
-            padding: 10px;
-            background-color: #333;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 50%;
-            transition: background-color 0.3s ease;
-        }
-
-        .backlink:hover {
-            background-color: #555;
+        /* Footer Styling */
+        footer {
+            background-color: #003d5b;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
         }
     </style>
 </head>
 <body>
-    <a class="backlink" href="index.html">&#8592;</a>
-    <!-- &#8592; is the HTML entity for the left arrow -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="notes.html">Notes</a></li>
+                <li><a href="readings.html" class="active">Readings</a></li>
+                <li><a href="nerding.html">Nerding</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <h1>My Readings</h1>
+    <div class="content">
+        <h1>My Readings</h1>
 
-    <div class="section">
-        <h2>Current Readings</h2>
-        <p>Here are some of the books I'm currently reading:</p>
-        <div class="sub-section">
-            <h3>1. The Punishment of Gaza</h3>
-            <div class="sub-sub-section">
-                <p>by Gideon Levy</p>
+        <div class="section">
+            <h2>Current Readings</h2>
+            <p>Here are some of the books I'm currently reading:</p>
+            <div class="sub-section">
+                <h3>1. The Punishment of Gaza</h3>
+                <div class="sub-sub-section">
+                    <p>by Gideon Levy</p>
+                </div>
             </div>
+            <!-- ... (other books) ... -->
         </div>
 
-        <!-- ... (other books) ... -->
-
-    </div>
-
-    <div class="section">
-        <h2>Past Readings</h2>
-        <p>Here are some of the books I've read in the past:</p>
-        <!-- ... (past readings) ... -->
-
-    </div>
-
-    <div class="section">
-        <h2>Recommended Readings</h2>
-        <p>Here are some of the books I recommend:</p>
-        <div class="sub-section">
-            <h3>1. Book Title</h3>
-            <div class="sub-sub-section">
-                <p>Book Description</p>
-            </div>
+        <div class="section">
+            <h2>Past Readings</h2>
+            <p>Here are some of the books I've read in the past:</p>
+            <!-- ... (past readings) ... -->
         </div>
 
-        <!-- ... (other recommended books) ... -->
-
+        <div class="section">
+            <h2>Recommended Readings</h2>
+            <p>Here are some of the books I recommend:</p>
+            <div class="sub-section">
+                <h3>1. Book Title</h3>
+                <div class="sub-sub-section">
+                    <p>Book Description</p>
+                </div>
+            </div>
+            <!-- ... (other recommended books) ... -->
+        </div>
     </div>
 
     <footer>
-        &copy; 2023 Sumit Pokharel
+        <p>&copy; 2023 Sumit Pokharel. All rights reserved.</p>
     </footer>
 </body>
 </html>
