@@ -1,51 +1,118 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Nerding</title>
-  <style>
-    /* Add your custom CSS styles here */
-  </style>
+    <meta charset="UTF-8">
+    <title>Nerding</title>
+    <style>
+        /* Basic Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header and Navigation Bar Styling */
+        header {
+            background-color: #006d77;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        header nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+
+        header nav ul li a:hover,
+        header nav ul li a.active {
+            background-color: rgba(255, 223, 186, 0.5);
+            box-shadow: 0 0 10px rgba(255, 223, 186, 0.7);
+        }
+
+        /* Content Styling */
+        .content {
+            padding: 80px 20px;
+            margin-top: 60px;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #003d5b;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>Welcome to Nerding!</h1>
-    <nav>
-      <ul>
-        <li><a href="#ai">AI</a></li>
-        <li><a href="#football">Football</a></li>
-        <li><a href="#space">Space Exploration</a></li>
-        <li><a href="#fantasy">Fantasy Novels</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="notes.html">Notes</a></li>
+                <li><a href="readings.html">Readings</a></li>
+                <li><a href="nerding.html" class="active">Nerding</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <main>
-    <section id="ai">
-      <h2>AI</h2>
-      <!-- Will add AI-related content here -->
-      Note to myself: all these sections do not have their own pages, and I will have to create hyperlinks to them from this page.
-      For now, this is just a placeholder.
-    </section>
+    <div class="content">
+        <h1>Nerding</h1>
+        <main>
+            <section id="ai">
+                <h2>AI</h2>
+                <!-- Will add AI-related content here -->
+                Note to myself: all these sections do not have their own pages, and I will have to create hyperlinks to them from this page.
+                For now, this is just a placeholder.
+            </section>
 
-    <section id="football">
-      <h2>Football</h2>
-      <!-- Will add football-related content here -->
-    </section>
+            <section id="football">
+                <h2>Football</h2>
+                <!-- Will add football-related content here -->
+            </section>
 
-    <section id="space">
-      <h2>Space Exploration</h2>
-      <!-- Will add space exploration-related content here -->
-    </section>
+            <section id="space">
+                <h2>Space Exploration</h2>
+                <!-- Will add space exploration-related content here -->
+            </section>
 
-    <section id="fantasy">
-      <h2>Fantasy Novels</h2>
-      <!-- Will add fantasy novels-related content here -->
-    </section>
-  </main>
+            <section id="fantasy">
+                <h2>Fantasy Novels</h2>
+                <!-- Will add fantasy novels-related content here -->
+            </section>
+        </main>
+    </div>
 
-  <footer>
-    &copy; 2023 Sumit Pokharel
-  </footer>
-
+    <footer>
+        <p>&copy; 2023 Sumit Pokharel.</p>
+    </footer>
 </body>
 </html>
