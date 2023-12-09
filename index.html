@@ -44,13 +44,21 @@
             color: white;
             text-decoration: none;
             font-weight: bold;
-            transition: color 0.3s;
+            padding: 10px 15px; /* Added padding for larger clickable area */
+            border-radius: 5px; /* Rounded corners for the glow effect */
+            transition: background-color 0.3s, box-shadow 0.3s;
         }
 
-        header nav ul li a:hover, header nav ul li a.active {
-            border: 2px solid white; /* Highlight style */
-            border-radius: 5px;
-            padding: 5px;
+        /* Hover effect */
+        header nav ul li a:hover {
+            background-color: rgba(255, 223, 186, 0.5); /* Warm, semi-transparent background */
+            box-shadow: 0 0 10px rgba(255, 223, 186, 0.7); /* Soft glow effect */
+        }
+
+        /* Active link effect */
+        header nav ul li a.active {
+            background-color: rgba(255, 223, 186, 0.7); /* Slightly more opaque for active state */
+            box-shadow: 0 0 15px rgba(255, 223, 186, 0.9); /* Stronger glow for active link */
         }
 
         /* Hero Section Styling */
