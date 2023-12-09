@@ -1,68 +1,110 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Projects</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f5f5f5;
-      margin: 0;
-      padding: 0;
-    }
+    <meta charset="UTF-8">
+    <title>Projects - Sumit Pokharel</title>
+    <style>
+        /* Basic Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+            line-height: 1.6;
+        }
 
-    header {
-      background-color: #333;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
+        /* Header and Navigation Bar Styling */
+        header {
+            background-color: #006d77;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
 
-    h1 {
-      margin: 0;
-    }
+        header nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
 
-    .project-section {
-      padding: 40px;
-      background-color: #fff;
-      margin-bottom: 20px;
-    }
+        header nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
 
-    .project-title {
-      font-size: 24px;
-      margin-bottom: 10px;
-    }
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
 
-    .project-description {
-      font-size: 16px;
-      color: #666;
-    }
-  </style>
+        header nav ul li a:hover,
+        header nav ul li a.active {
+            background-color: rgba(255, 223, 186, 0.5);
+            box-shadow: 0 0 10px rgba(255, 223, 186, 0.7);
+        }
+
+        /* Content Styling */
+        .content {
+            padding: 80px 20px;
+            margin-top: 60px;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #003d5b;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+    </style>
 </head>
 <body>
-    <header>
-      <h1>My Projects</h1>
-    </header>
+  <header>
+      <nav>
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="projects.html" class="active">Projects</a></li>
+              <li><a href="notes.html">Notes</a></li>
+              <li><a href="readings.html">Readings</a></li>
+              <li><a href="nerding.html">Nerding</a></li>
+          </ul>
+      </nav>
+  </header>
 
+  <div class="content">
+    <h1>My Projects</h1>
     <div class="project-section">
-      <h2 class="project-title">Project 1</h2>
-      <p class="project-description">Description of Project 1</p>
+        <h2 class="project-title">Project 1</h2>
+        <p class="project-description">Description of Project 1</p>
     </div>
-
     <div class="project-section">
-      <h2 class="project-title">Project 2</h2>
-      <p class="project-description">Description of Project 2</p>
+        <h2 class="project-title">Project 2</h2>
+        <p class="project-description">Description of Project 2</p>
     </div>
-
     <div class="project-section">
-      <h2 class="project-title">Project 3</h2>
-      <p class="project-description">Description of Project 3</p>
+        <h2 class="project-title">Project 3</h2>
+        <p class="project-description">Description of Project 3</p>
     </div>
+    <!-- Will add more projects as needed -->
+  </div>
 
-    <!-- Will add more project sections as needed -->
 
-    <footer>
-      &copy; 2023 Sumit Pokharel
-    </footer>
+  <footer>
+    <p>&copy; 2023 Sumit Pokharel.</p>
+  </footer>
   
 </body>
 </html>
