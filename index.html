@@ -9,18 +9,24 @@
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
+            padding-top: 60px; /* Adjust for fixed header */
             background-color: #f0f0f0;
             color: #333;
             line-height: 1.6;
         }
 
-        /* Header and Navigation Bar Styling */
+        /* Fixed Header and Navigation Bar Styling */
         header {
             background-color: #006d77;
             color: white;
             text-align: center;
             padding: 1rem 0;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            position: fixed; /* Fixes the header at the top */
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
         }
 
         header nav ul {
@@ -41,8 +47,10 @@
             transition: color 0.3s;
         }
 
-        header nav ul li a:hover {
-            color: #ffddd2;
+        header nav ul li a:hover, header nav ul li a.active {
+            border: 2px solid white; /* Highlight style */
+            border-radius: 5px;
+            padding: 5px;
         }
 
         /* Hero Section Styling */
@@ -95,7 +103,7 @@
     <header>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="notes.html">Notes</a></li>
@@ -107,8 +115,8 @@
 
     <!-- Hero Section -->
     <section class="hero">
-        <h1>Sumit Pokharel</h1>
-        <p>Incoming Software Engineer | Empowering Change Through AI</p>
+        <h1>Welcome to My Website</h1>
+        <p>This is where I share my projects, thoughts, and ideas.</p>
     </section>
 
     <!-- Featured Content -->
@@ -125,6 +133,7 @@
         <!-- Will add more cards as needed -->
     </section>
 
+    <!-- Footer -->
     <footer>
         <p>&copy; 2023 Sumit Pokharel.</p>
     </footer>
