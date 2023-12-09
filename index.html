@@ -4,44 +4,67 @@
     <meta charset="UTF-8">
     <title>Sumit Pokharel</title>
     <style>
-        /* Header and Navigation Bar Styling */
+        /* Basic Styles */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
         }
+
+        /* Header and Navigation Bar Styling */
         header {
             background-color: #333;
             color: white;
             text-align: center;
             padding: 1rem 0;
         }
+
         header nav ul {
             list-style: none;
             padding: 0;
             margin: 0;
         }
+
         header nav ul li {
             display: inline;
             margin-right: 20px;
         }
+
         header nav ul li a {
             color: white;
             text-decoration: none;
             font-weight: bold;
         }
+
         header nav ul li a:hover {
             text-decoration: underline;
         }
+
+        /* Hero Section Styling */
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+            background: #f4f4f4;
+        }
+
+        /* Featured Content Styling */
+        .featured {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .card {
+            background: white;
+            margin: 20px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+        }
     </style>
 </head>
-
 <body>
-    <header onclick="location.href='index.html'">
-        <h1>Sumit Pokharel</h1>
-        <p>Incoming Software Engineer '24 | Empowering change through ML & AI</p>
-    </header>
+    <header>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -50,12 +73,30 @@
                 <li><a href="notes.html">Notes</a></li>
                 <li><a href="readings.html">Readings</a></li>
                 <li><a href="nerding.html">Nerding</a></li>
-                <!-- Add other pages as needed -->
             </ul>
         </nav>
     </header>
 
-    <!-- Your existing content goes here -->
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Welcome to My Website</h1>
+        <p>This is where I share my projects, thoughts, and ideas.</p>
+    </section>
+
+    <!-- Featured Content -->
+    <section class="featured">
+        <h2>Featured Projects</h2>
+        <div class="card">
+            <h3>Project 1</h3>
+            <p>Short description of Project 1.</p>
+        </div>
+        <div class="card">
+            <h3>Project 2</h3>
+            <p>Short description of Project 2.</p>
+        </div>
+        <!-- Add more cards as needed -->
+    </section>
+
 
 <footer>
     &copy; 2023 Sumit Pokharel
