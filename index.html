@@ -9,16 +9,18 @@
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #eaeaea;
+            background-color: #f0f0f0;
             color: #333;
+            line-height: 1.6;
         }
 
         /* Header and Navigation Bar Styling */
         header {
-            background-color: #005f73;
+            background-color: #006d77;
             color: white;
             text-align: center;
             padding: 1rem 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
         }
 
         header nav ul {
@@ -36,26 +38,31 @@
             color: white;
             text-decoration: none;
             font-weight: bold;
+            transition: color 0.3s;
         }
 
         header nav ul li a:hover {
-            text-decoration: underline;
+            color: #ffddd2;
         }
 
         /* Hero Section Styling */
         .hero {
             text-align: center;
-            padding: 60px 20px;
-            background: linear-gradient(45deg, #003d5b, #7a5195);
+            padding: 80px 20px;
+            background: linear-gradient(to right, #003d5b, #2a9d8f);
             color: white;
-            font-size: 1.2em;
+            font-size: 1.4em;
+        }
+
+        .hero h1 {
+            margin-bottom: 0.5em;
         }
 
         /* Featured Content Styling */
         .featured {
-            padding: 40px 20px;
+            padding: 50px 20px;
             text-align: center;
-            background-color: #efefef;
+            background-color: #eaeaea;
         }
 
         .card {
@@ -64,8 +71,14 @@
             padding: 20px;
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
             display: inline-block;
-            width: 280px; /* Fixed width for consistency */
+            width: 280px;
             vertical-align: top;
+            transition: box-shadow 0.3s, transform 0.3s;
+        }
+
+        .card:hover {
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+            transform: translateY(-5px);
         }
 
         /* Footer Styling */
@@ -73,10 +86,8 @@
             background-color: #003d5b;
             color: white;
             text-align: center;
-            padding: 10px 0;
-            position: relative;
-            bottom: 0;
-            width: 100%;
+            padding: 20px 0;
+            margin-top: 40px;
         }
     </style>
 </head>
@@ -104,7 +115,7 @@
     <section class="featured">
         <h2>Featured Projects</h2>
         <div class="card">
-            <h3>Project 1 (incomplete)</h3>
+            <h3>Project 1</h3>
             <p>Short description of Project 1.</p>
         </div>
         <div class="card">
@@ -114,7 +125,6 @@
         <!-- Will add more cards as needed -->
     </section>
 
-    <!-- Footer -->
     <footer>
         <p>&copy; 2023 Sumit Pokharel.</p>
     </footer>
